@@ -18,6 +18,7 @@
     <string name="detailsTrackPrice_hint">Price</string>
     <string name="detailsDescription_dummyString">Aut reiciendis fuga veritatis eveniet nemo voluptatum. Et non quos explicabo rerum minus quis harum porro. Velit est dolore adipisci minus. Atque sit atque cum itaque molestias dolores iste nulla. Dignissimos laudantium vitae assumenda sint distinctio rem ipsa. Eius dolorem beatae laudantium. Vero necessitatibus magnam doloremque vel dolores. Voluptates rerum sapiente ipsa dignissimos quia rem. Necessitatibus voluptatem sit excepturi qui iure qui inventore. Asperiores quia consequatur aut dolores nulla consectetur beatae. Quia ut sequi aut laborum saepe. Ut reiciendis placeat maiores ex.</string>
     <string name="price_and_currency">%1$.2f %2$s</string>
+    <string name="unavailable_description">There is no available description for this media.</string>
     <string-array name="media_types_array">
         <item>Movie</item>
         <item>Podcast</item>

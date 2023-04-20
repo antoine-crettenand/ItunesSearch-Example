@@ -44,7 +44,8 @@ class DetailsFragment : Fragment() {
 
                 binding.detailsTrackName.text = itunesItem.trackName
                 binding.detailsArtistName.text = itunesItem.artistName
-                binding.detailsDescription.text = itunesItem.longDescription
+                binding.detailsDescription.text =
+                    itunesItem.getReadableLongDescription(error = getString(R.string.unavailable_description))
 
                 if (itunesItem.trackPrice != null && itunesItem.trackPrice.isFinite()) {
                     binding.detailsTrackPrice.text =
