@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Itunes Store Lookup App</string>
+    <string name="itunes_item_image_description">Preview image cover</string>
+    <string name="itunes_item_genre_hint">Genre</string>
+    <string name="itunes_item_release_date_hint">Release Date</string>
+    <string name="itunes_item_author_hint">Author</string>
+    <string name="itunes_item_type_hint">Type</string>
+    <string name="itunes_item_name_hint">Name</string>
+    <string name="search_country_code_hint">Country</string>
+    <string name="search_country_code_default_value">CH</string>
+    <string name="search_input_hint">keywords…</string>
+    <string name="search_button_text">Search</string>
+    <string name="media_type_default">Movie</string>
+    <string name="search_hint">Search...</string>
+    <string name="unknown_track_price_event">Unavailable</string>
+    <string name="detailsTrackName_hint">Title</string>
+    <string name="detailsArtistName_hint">Author</string>
+    <string name="detailsTrackPrice_hint">Price</string>
+    <string name="detailsDescription_dummyString">Aut reiciendis fuga veritatis eveniet nemo voluptatum. Et non quos explicabo rerum minus quis harum porro. Velit est dolore adipisci minus. Atque sit atque cum itaque molestias dolores iste nulla. Dignissimos laudantium vitae assumenda sint distinctio rem ipsa. Eius dolorem beatae laudantium. Vero necessitatibus magnam doloremque vel dolores. Voluptates rerum sapiente ipsa dignissimos quia rem. Necessitatibus voluptatem sit excepturi qui iure qui inventore. Asperiores quia consequatur aut dolores nulla consectetur beatae. Quia ut sequi aut laborum saepe. Ut reiciendis placeat maiores ex.</string>
+    <string name="price_and_currency">%1$.2f %2$s</string>
+    <string-array name="media_types_array">
+        <item>Movie</item>
+        <item>Podcast</item>
+        <item>Music</item>
+        <item>Music Video</item>
+        <item>Audio Book</item>
+        <item>Short Film</item>
+        <item>TV Show</item>
+        <item>Software</item>
+        <item>EBook</item>
+        <item>All</item>
+    </string-array>
+</resources>

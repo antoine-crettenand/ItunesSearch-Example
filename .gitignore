@@ -1,0 +1,7 @@
+.gradle/
+.idea/
+gradle/
+gradlew.sh
+local.properties
+
+.gitattributes

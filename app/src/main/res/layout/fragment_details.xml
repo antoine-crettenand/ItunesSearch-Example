@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.fragments.DetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/detailsPreview_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/detailsTrackName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="@string/detailsTrackName_hint"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            app:layout_constraintTop_toBottomOf="@+id/detailsPreview_image"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/detailsArtistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detailsArtistName_hint"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintTop_toBottomOf="@+id/detailsTrackName"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/detailsTrackPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detailsTrackPrice_hint"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsDescription" />
+
+        <TextView
+            android:id="@+id/detailsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/detailsDescription_dummyString"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintTop_toBottomOf="@+id/detailsArtistName"
+            tools:layout_editor_absoluteX="48dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
