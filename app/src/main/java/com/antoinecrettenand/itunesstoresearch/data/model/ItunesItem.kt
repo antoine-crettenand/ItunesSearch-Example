@@ -80,9 +80,9 @@ data class ItunesItem(
 
     }
 
-    fun getReadableLongDescription(): String {
+    fun getReadableLongDescription(error: String): String {
         return if (longDescription.isNullOrBlank())
-            "There is no description for this media."
+            error
         else
             longDescription
     }
