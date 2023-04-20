@@ -1,8 +1,6 @@
 .gradle/
 .idea/
-gradle/
-gradlew.sh
-local.properties
+build
 
 .gitattributes
 app/proguard-rules.pro
