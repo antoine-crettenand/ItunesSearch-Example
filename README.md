@@ -59,11 +59,6 @@ git clone https://github.com/antoine-crettenand/ItunesSearch-Example.git
 * [Navigation](https://developer.android.com/guide/navigation/) - Android Jetpack's Navigation component for in-app
   navigation
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://github.com/antoine-crettenand/ItunesSearch-Example.git/blob/main/CONTRIBUTING.md)
-for details on our code of conduct and the process for submitting pull requests.
-
 ## License
 
 This project is licensed under the MIT License - see
