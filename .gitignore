@@ -5,3 +5,5 @@ gradlew.sh
 local.properties
 
 .gitattributes
+app/proguard-rules.pro
+.DS_Store
