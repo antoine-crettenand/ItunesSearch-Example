@@ -28,7 +28,6 @@
             android:id="@+id/detailsTrackName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:justificationMode="inter_word"
             android:text="@string/detailsTrackName_hint"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             app:layout_constraintTop_toBottomOf="@+id/detailsPreview_image"

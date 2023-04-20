@@ -12,7 +12,6 @@ const val BASE_URL = "https://itunes.apple.com/"
 
 interface ItunesNetwork {
 
-    // removed "&all" because default value is all
     @GET("search?")
     fun getMedia(
         @Query("term") term: String,
