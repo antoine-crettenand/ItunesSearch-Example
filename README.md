@@ -8,7 +8,6 @@ search term. The app utilizes the Apple's iTunes Store API and Retrofit library 
 * Search through the iTunes catalog by selecting a media category (Movie, Podcast, EBook, etc.) and entering a search
   term (String)
 * Access to the Swiss (CH) iTunes catalog by default
-* GET requests managed with Retrofit library
 * Results displayed in a list format
 * Clickable results that redirect users to their respective preview page on the iTunes Store
 * Limit of 50 results per query
@@ -58,11 +57,6 @@ git clone https://github.com/antoine-crettenand/ItunesSearch-Example.git
   displaying content in a card format
 * [Navigation](https://developer.android.com/guide/navigation/) - Android Jetpack's Navigation component for in-app
   navigation
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://github.com/antoine-crettenand/ItunesSearch-Example.git/blob/main/CONTRIBUTING.md)
-for details on our code of conduct and the process for submitting pull requests.
 
 ## License
 
