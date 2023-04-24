@@ -4,15 +4,14 @@ import android.content.Context
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
 import com.antoinecrettenand.itunesstoresearch.R
 import com.antoinecrettenand.itunesstoresearch.data.model.ItunesItemType
 import com.antoinecrettenand.itunesstoresearch.ui.viewmodels.MainViewModel
-import com.google.android.material.appbar.AppBarLayout
 
 
 class MainActivity : AppCompatActivity() {
@@ -29,13 +28,32 @@ class MainActivity : AppCompatActivity() {
         setupViewModel()
         setupToolbar()
         setupSearchView()
-        populateSpinnerWithMediaTypeChoices()
+        setupSpinner()
+        setupOnBackPressed()
 
         val host = NavHostFragment.create(R.navigation.nav_graph)
         supportFragmentManager.beginTransaction()
             .replace(R.id.nav_host_fragment, host)
             .setPrimaryNavigationFragment(host)
             .commit()
+
+    }
+
+    private fun setupOnBackPressed() {
+        val onBackPressedCallback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+                val navController = navHostFragment.navController
+
+                if (navController.currentDestination?.id == R.id.detailsFragment) {
+                    navController.navigateUp()
+                } else {
+                    isEnabled = false
+                    onBackPressedDispatcher.onBackPressed()
+                }
+            }
+        }
+        onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -84,7 +102,7 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun populateSpinnerWithMediaTypeChoices() {
+    private fun setupSpinner() {
         spinner = findViewById(R.id.searchMediaType)
 
         val adapter = ArrayAdapter.createFromResource(

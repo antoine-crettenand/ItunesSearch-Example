@@ -64,12 +64,9 @@ class ItunesItemAdapter(
     }
 }
 
-abstract class RecyclerTouchListener(private val navController: NavController) : OnItemClickListener {
-    abstract fun onItemClick(navController: NavController = this.navController, itunesItem: ItunesItem)
+abstract class RecyclerTouchListener : OnItemClickListener {
+    abstract override fun onItemClick(itunesItem: ItunesItem)
 
-    override fun onItemClick(itunesItem: ItunesItem) {
-        return onItemClick(navController, itunesItem)
-    }
 }
 
 

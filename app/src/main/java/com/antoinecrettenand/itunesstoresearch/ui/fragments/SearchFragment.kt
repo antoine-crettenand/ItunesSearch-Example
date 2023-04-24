@@ -56,8 +56,8 @@ class SearchFragment : Fragment() {
     }
 
     private fun setupRecyclerView() {
-        val recyclerTouchListener: RecyclerTouchListener = object : RecyclerTouchListener(navController) {
-            override fun onItemClick(navController: NavController, itunesItem: ItunesItem) {
+        val recyclerTouchListener: RecyclerTouchListener = object : RecyclerTouchListener() {
+            override fun onItemClick(itunesItem: ItunesItem) {
                 mainViewModel.selectItunesItem(itunesItem)
                 navController.navigate(R.id.action_searchFragment_to_detailsFragment)
             }
